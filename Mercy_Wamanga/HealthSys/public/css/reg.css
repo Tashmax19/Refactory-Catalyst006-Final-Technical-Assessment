@@ -1,0 +1,120 @@
+.panel {
+
+	width: 500px;
+	height:500px;
+	
+}
+
+.panel1 {
+	
+	float: left;
+	margin-left: 5px;
+}
+
+.panel2 {
+
+	float: right;
+	margin-right: 5px;
+}
+
+.panel3 {
+border:1px solid green;
+
+
+	padding:2px;
+}
+
+.btn{
+	float:right;
+}
+.panel4{
+	padding:2px;
+	margin-top: 50px;
+	
+
+}
+
+.panel5{
+	padding:2px;
+	margin-top: 10px;
+
+
+}
+img{
+	width:500px;
+}
+
+.card {
+	margin-top: 30px;
+	width:600px;
+	height:720px;
+	margin-left:300px;
+}
+.male{
+	margin-left:5px;
+}
+
+button{
+	float:right;
+}
+card-title.mt-3.text-center{
+	padding:0px;
+
+}
+
+.form-group.input-group {
+	margin-bottom: 0px;
+}
+.input-group.mb-3{
+	margin-bottom: 0px;
+}
+
+.input-group-append{
+	margin-bottom: 0px;
+}
+
+#surnameError{
+	width: 150;
+	height: 20px;
+	color: red;
+	font-size: 12px;
+}
+
+#dobError{
+	width: 150;
+	height: 20px;
+	color: red;
+	font-size: 12px;
+}
+
+#occupationError{
+	width: 150;
+	height: 20px;
+	color: red;
+	font-size: 12px;
+}
+
+#residentError{
+	width: 150;
+	height: 20px;
+	color: red;
+	font-size: 12px;
+}
+
+#nationalityError{
+	width: 150;
+	height: 20px;
+	color: red;
+	font-size: 12px;
+}
+
+#genderError{
+	width: 150;
+	height: 20px;
+	color: red;
+	font-size: 12px;
+}
+
+
+
+

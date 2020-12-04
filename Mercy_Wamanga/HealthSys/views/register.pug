@@ -1,0 +1,72 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		// Bootstrap CSS/font-awesome
+		link(rel="stylesheet" href="css/bootstrap/bootstrap.min.css")
+		// CSS
+		link(rel="stylesheet" href="css/reg.css")
+		title registration
+	body
+		.container
+			br
+			.card.bg-white
+				.card-body.mx-auto
+					.image
+						img(src="./system-images/form-header-image.png" alt="")
+					h4.card-title.mt-3.text-center Ministry of Health
+					p.card-title.mt-3.text-center COVID-19
+					h4.card-title.mt-3.text-center Virus Test Registration
+					form(action="/register" method="post" name="form" onsubmit="return regVal()")
+						.panel.control-group
+							.panel1
+								label.form-check.form-check-inline  Surname
+								br
+								input.form-control(name="surname"  type="text" required )
+								#surnameError
+								label.form-check.form-check-inline  Date of Birth
+								br
+								input.form-control(name="dob" required="" type="text")
+								#dobError
+								label.form-check.form-check-inline  Occupation
+								br
+								input.form-control(name="occupation" required="" type="text")
+								#occupationError
+							.panel2
+								label.form-check.form-check-inline  Given Name
+								br
+								input.form-control(name="givenname" required="" type="text")
+								label.form-check.form-check-inline  Place of residence
+								br
+								input.form-control(name="residence" required="" type="text")
+								#residentError
+								label.form-check.form-check-inline  Nationality
+								br
+								input.form-control(name="nationality" required="" type="text")
+								#nationalityError
+							br
+							.panel4
+								select.form-control(name="category" required="")
+									option(disabled="disabled" selected="selected") Select Category
+									option Returnee
+									option Contact
+									option Alert
+									option Volunteer
+							br
+							label.form-check.form-check-inline  Gender
+							hr
+							input.form-check-input(type="radio" name="gender" value="Male")
+							span.form-check-label  Male &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+							
+							input.form-check-input(type="radio" name="gender" value="Female" required="")
+							span.form-check-label  Female 
+							#genderMError
+							.panel5
+								input.btn.btn-primary(type="submit" value="Register")
+			// container end.//
+			// Optional JavaScript
+			// jQuery first, then Popper.js, then Bootstrap JS
+			script(src="/js/jquery-3.3.1.slim.min.js")
+			script(src="/js/popper.min.js")
+			script(src="/js/validation.js")
